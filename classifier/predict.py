@@ -6,7 +6,10 @@ import sys,argparse
 
 # First, pass the path of the image
 dir_path = os.path.dirname(os.path.realpath(__file__))
-image_path=sys.argv[1]
+try:
+	image_path=sys.argv[1]
+except IndexError:
+	sys.exit("Missing image path")
 filename = dir_path +'/' +image_path
 image_size=128
 num_channels=3
