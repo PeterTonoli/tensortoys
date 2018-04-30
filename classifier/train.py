@@ -16,7 +16,7 @@ set_random_seed(2)
 batch_size = 32
 
 #Prepare input data
-classes = ['dogs','cats']
+classes = ['handwritten','memos','agendas']
 num_classes = len(classes)
 
 # 20% of the data will automatically be used for validation
